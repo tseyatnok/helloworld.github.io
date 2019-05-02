@@ -1,0 +1,195 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color:pink;
+  width:100%;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.header{
+  width:100%;
+  height:300px;
+  background-image:url("http://www.hkgbmf.com/uploadfile/2019/0131/20190131031646850.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+  background-size: 100%;
+  /* background-color: lightblue; */
+  padding:1px;
+  margin:0 ;
+  box-shadow: 2px 2px 9px grey;
+  /* font-family: 'Alegreya SC', serif; */
+
+}
+.header img{
+  width:200px;
+  height:200px;
+  float:left;
+  object-fit: cover;
+  margin:5px;
+  position:absolute;
+  top:50px;
+  left:20px;
+  shadow:1px 1px solid white;
+}
+.header h1{
+  float:right;
+
+  font-size: 75px;
+  /* line-height: 50px; */
+  color:white;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  text-shadow:4px 4px 0px purple;
+  position:absolute;
+  float:right;
+  top:70px;
+  right:5px;
+}
+
+
+.navbar-container{
+  margin: 0;
+  padding:0;
+  position:sticky;
+  top:0;
+  width:100%;
+  height:50px;
+  background-color: orange;
+  border: 1px solid black;
+  box-shadow: 0px 1px 9px grey;
+  z-index: 1;
+  opacity: .9;
+    overflow: hidden;
+}
+.navbar-container ul{
+  display: block;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+
+
+
+}
+
+.navbar-container ul li{
+  margin:0 ;
+  padding:0;
+  height:100%;
+  list-style: none;
+  float:left;
+/*border:.5px solid black;*/
+}
+
+.navbar-container ul li a{
+  display:inline-block;
+  margin:0;
+  width:100%;
+  height:100%;
+  padding:0px 40px 0px 40px;
+  text-decoration: none;
+  background-color: orange;
+  color:white;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 45px;
+  text-shadow: 1px 1px 9px grey;
+}
+
+.navbar-container ul li a:hover{
+  background-color:white;
+  color:orange;
+  transition:250ms;
+}
+
+
+.grid-layout{
+  padding:0;
+  margin:0;
+  display: grid;
+  grid-template: 'sidebar-container content-frame' auto/ 12% 80%;
+  /* grid-template-rows: 'sidebar-container content-frame'100px/ 20% auto; */
+}
+
+.sidebar-container{
+  margin:0;
+  padding: 0;
+  background-color: purple;
+  grid-area: sidebar-container;
+  box-shadow: 1px 4px 9px grey;
+}
+.sidebar-container ul{
+  margin:0;
+  padding:0;
+}
+
+.sidebar-container ul li{
+  margin:0;
+  padding:0;
+  list-style: none;
+  width:100%;
+  float:left;
+  /* border:1px solid white; */
+}
+
+.sidebar-container ul li a{
+  display: inline-block;
+  padding:20px 0;
+  width:100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:white;
+  text-shadow: 1px 1px 9px grey;
+  font-size: 20px;
+  line-height: 25px;
+  text-align:center;
+}
+.sidebar-container ul li a:hover{
+  background-color: white;
+  color:purple;
+  transition: 250ms;
+}
+
+
+.content-frame{
+  grid-area:content-frame;
+  margin:30px 30px;
+  padding:30px 30px;
+  background-color:white;
+  opacity: .9;
+  box-shadow: 10px 4px 15px grey;
+}
+
+.img-container{
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  position: relative;
+}
+.img-container img{
+  width:500px;
+  box-shadow: 1px 2px 18px grey;
+  margin:70px 0px 15px 200px;
+  /* float:left; */
+}
+
+.img-container ul{
+  margin:70px 200px 15px 0px;
+}
+.img-container ul li{
+    font-size: 30px;
+    padding: 5px;
+    margin: 0;
+}
+.text-container{
+  text-align: center;
+}
+.text-container h2{
+  text-align: center;
+  font-size: 40px;
+}
+.text-container p{
+  margin:50px 200px 50px 200px;
+  padding:50px;
+  font-size: 30px;
+  border: 2px solid black;
+}
